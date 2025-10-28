@@ -1,7 +1,7 @@
 from pico2d import *
 #world[0] 가장 낮은 계층 layer
 #world[1] 그 다음 계층 layer
-world = [[],[]]
+world = [[],[],[]]
 
 
 def add_object(o, depth=0):
