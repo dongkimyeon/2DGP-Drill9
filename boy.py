@@ -40,7 +40,9 @@ class Idle:
 
 
     def exit(self, e):
-        pass
+        if space_down(e):
+            self.boy.fire_ball()
+
 
     def do(self):
         self.boy.frame = (self.boy.frame + 1) % 8
@@ -91,7 +93,8 @@ class Run:
             self.boy.dir = self.boy.face_dir = -1
 
     def exit(self, e):
-        pass
+        if space_down(e):
+            self.boy.fire_ball()
 
     def do(self):
         self.boy.frame = (self.boy.frame + 1) % 8
@@ -135,6 +138,8 @@ class Boy:
     def handle_event(self, event):
         self.state_machine.handle_state_event(('INPUT', event))
         pass
+    def fire_ball(self):
+        print('Fire Ball!')
 
     def draw(self):
         self.state_machine.draw()
