@@ -25,8 +25,6 @@ def reset_world():
 
     global boy
 
-
-
     grass = Grass()
     game_world.add_object(grass)
 
