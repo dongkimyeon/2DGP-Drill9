@@ -141,7 +141,7 @@ class Boy:
         self.state_machine.handle_state_event(('INPUT', event))
         pass
     def fire_ball(self):
-        print('Fire Ball!')
+        #print('Fire Ball!')
         ball = Ball(self.x, self.y, self.face_dir*10)
         game_world.add_object(ball , 1)
 

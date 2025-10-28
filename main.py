@@ -29,7 +29,6 @@ def reset_world():
     game_world.add_object(grass , 1)
     grass2 = Grass(400, 60)
     game_world.add_object(grass2 , 0)
-
     boy = Boy()
     game_world.add_object(boy ,2)
 
